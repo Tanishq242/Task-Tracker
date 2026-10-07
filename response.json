@@ -1,0 +1,497 @@
+{
+    "items": [
+        {
+            "id": 49,
+            "title": "Implement rate limiting per user",
+            "description": "Rate limiting should be per authenticated user not per IP to handle shared networks",
+            "status": "OPEN",
+            "priority": "MEDIUM",
+            "archived": false,
+            "assignee": "Eve",
+            "createdAt": "2024-03-03T10:30:00"
+        },
+        {
+            "id": 48,
+            "title": "Add input validation for task creation",
+            "description": "The create task endpoint accepts blank titles and negative priority values",
+            "status": "OPEN",
+            "priority": "HIGH",
+            "archived": false,
+            "assignee": "Dave",
+            "createdAt": "2024-03-02T09:00:00"
+        },
+        {
+            "id": 47,
+            "title": "Fix search not clearing on navigation",
+            "description": "Search query persists when navigating away and returning to the task list",
+            "status": "DONE",
+            "priority": "LOW",
+            "archived": false,
+            "assignee": "Carol",
+            "createdAt": "2024-03-01T14:00:00"
+        },
+        {
+            "id": 46,
+            "title": "Migrate to structured logging",
+            "description": "Replace System.out.println calls with SLF4J structured logging throughout the api",
+            "status": "OPEN",
+            "priority": "MEDIUM",
+            "archived": false,
+            "assignee": "Bob",
+            "createdAt": "2024-02-29T11:30:00"
+        },
+        {
+            "id": 45,
+            "title": "Add health check endpoint",
+            "description": "Kubernetes probes need a dedicated health check endpoint for readiness and liveness",
+            "status": "DONE",
+            "priority": "HIGH",
+            "archived": false,
+            "assignee": "Alice",
+            "createdAt": "2024-02-28T08:00:00"
+        },
+        {
+            "id": 44,
+            "title": "Fix API response caching headers",
+            "description": "API responses are cached by browsers even for authenticated dynamic data",
+            "status": "OPEN",
+            "priority": "MEDIUM",
+            "archived": false,
+            "assignee": "Eve",
+            "createdAt": "2024-02-27T10:15:00"
+        },
+        {
+            "id": 43,
+            "title": "Improve table sorting UX",
+            "description": "Clicking a column header should toggle sort direction with a visual indicator",
+            "status": "OPEN",
+            "priority": "LOW",
+            "archived": false,
+            "assignee": "Dave",
+            "createdAt": "2024-02-26T13:00:00"
+        },
+        {
+            "id": 42,
+            "title": "Add automated backup schedule",
+            "description": "Database backups should run automatically every six hours with retention policy",
+            "status": "OPEN",
+            "priority": "HIGH",
+            "archived": false,
+            "assignee": "Carol",
+            "createdAt": "2024-02-25T09:30:00"
+        },
+        {
+            "id": 41,
+            "title": "Fix session expiry handling",
+            "description": "Users are not redirected to login when their session expires mid-action",
+            "status": "IN_PROGRESS",
+            "priority": "HIGH",
+            "archived": false,
+            "assignee": "Bob",
+            "createdAt": "2024-02-24T11:00:00"
+        },
+        {
+            "id": 40,
+            "title": "Add request logging middleware",
+            "description": "All api requests should be logged with method path duration and response code",
+            "status": "OPEN",
+            "priority": "MEDIUM",
+            "archived": false,
+            "assignee": "Alice",
+            "createdAt": "2024-02-23T10:00:00"
+        },
+        {
+            "id": 39,
+            "title": "Implement task duplication",
+            "description": "Add a duplicate button so users can clone an existing task with prefilled fields",
+            "status": "OPEN",
+            "priority": "LOW",
+            "archived": false,
+            "assignee": "Eve",
+            "createdAt": "2024-02-22T08:45:00"
+        },
+        {
+            "id": 38,
+            "title": "Fix broken pagination on mobile",
+            "description": "Pagination buttons overlap on screens narrower than 400 pixels",
+            "status": "IN_PROGRESS",
+            "priority": "MEDIUM",
+            "archived": false,
+            "assignee": "Dave",
+            "createdAt": "2024-02-21T14:30:00"
+        },
+        {
+            "id": 37,
+            "title": "Add task comments feature",
+            "description": "Users should be able to add comments and discussion threads to tasks",
+            "status": "OPEN",
+            "priority": "MEDIUM",
+            "archived": false,
+            "assignee": "Carol",
+            "createdAt": "2024-02-20T10:00:00"
+        },
+        {
+            "id": 36,
+            "title": "Fix CSV injection vulnerability",
+            "description": "Exported CSV files do not sanitize fields that start with equals or plus signs",
+            "status": "OPEN",
+            "priority": "HIGH",
+            "archived": false,
+            "assignee": "Bob",
+            "createdAt": "2024-02-19T09:00:00"
+        },
+        {
+            "id": 35,
+            "title": "Optimize database indexes",
+            "description": "Query performance degrades as the task count grows beyond ten thousand rows",
+            "status": "OPEN",
+            "priority": "MEDIUM",
+            "archived": false,
+            "assignee": "Alice",
+            "createdAt": "2024-02-18T15:00:00"
+        },
+        {
+            "id": 34,
+            "title": "Add role-based access control",
+            "description": "Different user roles should have different permissions for task operations",
+            "status": "OPEN",
+            "priority": "HIGH",
+            "archived": false,
+            "assignee": "Eve",
+            "createdAt": "2024-02-17T11:30:00"
+        },
+        {
+            "id": 33,
+            "title": "Fix memory leak in report generator",
+            "description": "The monthly report generation process leaks memory and eventually crashes",
+            "status": "IN_PROGRESS",
+            "priority": "HIGH",
+            "archived": false,
+            "assignee": "Dave",
+            "createdAt": "2024-02-16T10:00:00"
+        },
+        {
+            "id": 32,
+            "title": "Add keyboard shortcuts",
+            "description": "Power users want keyboard shortcuts for common actions like create and search",
+            "status": "OPEN",
+            "priority": "LOW",
+            "archived": false,
+            "assignee": "Carol",
+            "createdAt": "2024-02-15T13:45:00"
+        },
+        {
+            "id": 31,
+            "title": "Implement webhook integration",
+            "description": "Add outgoing webhooks so external systems can subscribe to task events",
+            "status": "OPEN",
+            "priority": "MEDIUM",
+            "archived": false,
+            "assignee": "Bob",
+            "createdAt": "2024-02-14T09:15:00"
+        },
+        {
+            "id": 30,
+            "title": "Fix duplicate notification emails",
+            "description": "Some users receive the same notification email two or three times",
+            "status": "IN_PROGRESS",
+            "priority": "HIGH",
+            "archived": false,
+            "assignee": "Alice",
+            "createdAt": "2024-02-13T08:30:00"
+        },
+        {
+            "id": 29,
+            "title": "Add bulk task assignment",
+            "description": "Allow managers to assign multiple tasks to a team member at once",
+            "status": "OPEN",
+            "priority": "MEDIUM",
+            "archived": false,
+            "assignee": "Eve",
+            "createdAt": "2024-02-12T14:00:00"
+        },
+        {
+            "id": 28,
+            "title": "Upgrade Spring Boot to 3.3",
+            "description": "Current version 3.2 is approaching end of support window",
+            "status": "OPEN",
+            "priority": "MEDIUM",
+            "archived": false,
+            "assignee": "Bob",
+            "createdAt": "2024-02-11T11:00:00"
+        },
+        {
+            "id": 27,
+            "title": "Fix timezone display bug",
+            "description": "Task timestamps show in UTC instead of the users local timezone",
+            "status": "IN_PROGRESS",
+            "priority": "MEDIUM",
+            "archived": false,
+            "assignee": "Dave",
+            "createdAt": "2024-02-10T10:30:00"
+        },
+        {
+            "id": 26,
+            "title": "Add dark mode support",
+            "description": "Users have requested a dark mode toggle for the dashboard UI",
+            "status": "OPEN",
+            "priority": "LOW",
+            "archived": false,
+            "assignee": "Carol",
+            "createdAt": "2024-02-09T09:00:00"
+        },
+        {
+            "id": 25,
+            "title": "Fix stale data in reports",
+            "description": "Cached report data sometimes shows stale numbers for up to an hour",
+            "status": "OPEN",
+            "priority": "HIGH",
+            "archived": false,
+            "assignee": "Alice",
+            "createdAt": "2024-02-08T10:00:00"
+        },
+        {
+            "id": 24,
+            "title": "Improve search performance",
+            "description": "Database search queries are slow when the search term is short or blank",
+            "status": "OPEN",
+            "priority": "MEDIUM",
+            "archived": false,
+            "assignee": "Dave",
+            "createdAt": "2024-02-07T08:45:00"
+        },
+        {
+            "id": 23,
+            "title": "Add task priority sorting",
+            "description": "Allow users to sort the task table by priority column",
+            "status": "OPEN",
+            "priority": "LOW",
+            "archived": false,
+            "assignee": "Carol",
+            "createdAt": "2024-02-06T11:30:00"
+        },
+        {
+            "id": 22,
+            "title": "Fix email notification delay",
+            "description": "Email notifications are delayed by up to 15 minutes after task assignment",
+            "status": "IN_PROGRESS",
+            "priority": "MEDIUM",
+            "archived": false,
+            "assignee": "Eve",
+            "createdAt": "2024-02-05T09:00:00"
+        },
+        {
+            "id": 21,
+            "title": "Legacy API cleanup",
+            "description": "Remove deprecated api helper functions and update search integration docs",
+            "status": "DONE",
+            "priority": "LOW",
+            "archived": true,
+            "assignee": "Bob",
+            "createdAt": "2024-02-04T14:00:00"
+        },
+        {
+            "id": 20,
+            "title": "Decommission legacy search endpoint",
+            "description": "The old /api/v1/search endpoint should be removed after migration to the new api",
+            "status": "DONE",
+            "priority": "LOW",
+            "archived": true,
+            "assignee": "Alice",
+            "createdAt": "2024-02-03T12:00:00"
+        },
+        {
+            "id": 19,
+            "title": "Add API versioning",
+            "description": "Public api should be versioned to allow backward-compatible changes",
+            "status": "OPEN",
+            "priority": "LOW",
+            "archived": false,
+            "assignee": "Dave",
+            "createdAt": "2024-02-02T10:00:00"
+        },
+        {
+            "id": 18,
+            "title": "Fix status filter edge case",
+            "description": "Selecting a status filter then clearing it does not reset the results",
+            "status": "DONE",
+            "priority": "MEDIUM",
+            "archived": false,
+            "assignee": "Carol",
+            "createdAt": "2024-02-01T16:00:00"
+        },
+        {
+            "id": 17,
+            "title": "Optimize report generation",
+            "description": "Monthly report queries take over 30 seconds and need optimization",
+            "status": "OPEN",
+            "priority": "HIGH",
+            "archived": false,
+            "assignee": "Eve",
+            "createdAt": "2024-01-31T09:30:00"
+        },
+        {
+            "id": 16,
+            "title": "Implement audit logging",
+            "description": "Add audit logs for all write operations on the api endpoints",
+            "status": "IN_PROGRESS",
+            "priority": "HIGH",
+            "archived": false,
+            "assignee": "Bob",
+            "createdAt": "2024-01-30T11:00:00"
+        },
+        {
+            "id": 15,
+            "title": "Fix search result ranking",
+            "description": "Search results should prioritize title matches over description matches",
+            "status": "OPEN",
+            "priority": "MEDIUM",
+            "archived": false,
+            "assignee": "Alice",
+            "createdAt": "2024-01-29T08:00:00"
+        },
+        {
+            "id": 14,
+            "title": "Add loading skeleton UI",
+            "description": "Replace the loading spinner with skeleton components for better UX",
+            "status": "OPEN",
+            "priority": "LOW",
+            "archived": false,
+            "assignee": "Dave",
+            "createdAt": "2024-01-28T14:30:00"
+        },
+        {
+            "id": 13,
+            "title": "Update npm dependencies",
+            "description": "Several npm packages have known vulnerabilities that need to be updated",
+            "status": "IN_PROGRESS",
+            "priority": "MEDIUM",
+            "archived": false,
+            "assignee": "Carol",
+            "createdAt": "2024-01-27T10:00:00"
+        },
+        {
+            "id": 12,
+            "title": "Setup monitoring alerts",
+            "description": "Configure alerts for api latency above 2s and error rate above 5 percent",
+            "status": "OPEN",
+            "priority": "HIGH",
+            "archived": false,
+            "assignee": "Eve",
+            "createdAt": "2024-01-26T09:00:00"
+        },
+        {
+            "id": 11,
+            "title": "Improve error messages",
+            "description": "API error responses should include a human-readable message and error code",
+            "status": "OPEN",
+            "priority": "MEDIUM",
+            "archived": false,
+            "assignee": "Bob",
+            "createdAt": "2024-01-25T15:00:00"
+        },
+        {
+            "id": 10,
+            "title": "Fix pagination off-by-one",
+            "description": "Page 2 shows the last item from page 1 as its first item",
+            "status": "IN_PROGRESS",
+            "priority": "HIGH",
+            "archived": false,
+            "assignee": "Alice",
+            "createdAt": "2024-01-24T11:30:00"
+        },
+        {
+            "id": 9,
+            "title": "Add filter by date range",
+            "description": "Allow users to filter tasks by creation date range on the dashboard",
+            "status": "OPEN",
+            "priority": "MEDIUM",
+            "archived": false,
+            "assignee": "Dave",
+            "createdAt": "2024-01-23T10:00:00"
+        },
+        {
+            "id": 8,
+            "title": "Cleanup old migration scripts",
+            "description": "Remove migration scripts older than v2.0 that are no longer needed",
+            "status": "DONE",
+            "priority": "LOW",
+            "archived": false,
+            "assignee": "Carol",
+            "createdAt": "2024-01-22T13:45:00"
+        },
+        {
+            "id": 7,
+            "title": "Database connection pool tuning",
+            "description": "Increase connection pool size and add monitoring for pool exhaustion",
+            "status": "OPEN",
+            "priority": "MEDIUM",
+            "archived": false,
+            "assignee": "Eve",
+            "createdAt": "2024-01-21T09:15:00"
+        },
+        {
+            "id": 6,
+            "title": "Report export CSV bug",
+            "description": "CSV export adds extra commas for rows with empty description fields",
+            "status": "DONE",
+            "priority": "MEDIUM",
+            "archived": false,
+            "assignee": "Bob",
+            "createdAt": "2024-01-20T16:00:00"
+        },
+        {
+            "id": 5,
+            "title": "Fix stale cache issue",
+            "description": "Stale cache entries are served for up to 10 minutes after data changes",
+            "status": "IN_PROGRESS",
+            "priority": "HIGH",
+            "archived": false,
+            "assignee": "Alice",
+            "createdAt": "2024-01-19T08:30:00"
+        },
+        {
+            "id": 4,
+            "title": "Refactor user service",
+            "description": "The user service has grown too large and needs to be split into smaller modules",
+            "status": "OPEN",
+            "priority": "LOW",
+            "archived": false,
+            "assignee": "Dave",
+            "createdAt": "2024-01-18T14:00:00"
+        },
+        {
+            "id": 3,
+            "title": "Add search to dashboard",
+            "description": "Add a search bar to the main dashboard so users can find reports quickly",
+            "status": "OPEN",
+            "priority": "MEDIUM",
+            "archived": false,
+            "assignee": "Carol",
+            "createdAt": "2024-01-17T11:00:00"
+        },
+        {
+            "id": 2,
+            "title": "Update API rate limiting",
+            "description": "Implement rate limiting on the public api endpoints to prevent abuse",
+            "status": "IN_PROGRESS",
+            "priority": "HIGH",
+            "archived": false,
+            "assignee": "Bob",
+            "createdAt": "2024-01-16T10:30:00"
+        },
+        {
+            "id": 1,
+            "title": "Fix login redirect bug",
+            "description": "Users are redirected to a blank page after login on mobile browsers",
+            "status": "OPEN",
+            "priority": "HIGH",
+            "archived": false,
+            "assignee": "Alice",
+            "createdAt": "2024-01-15T09:00:00"
+        }
+    ],
+    "total": 49,
+    "page": 1,
+    "pageSize": 10
+}
